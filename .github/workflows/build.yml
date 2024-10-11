@@ -3,6 +3,9 @@ name: Build Workflow
 on:
   push:
 
+permissions:
+  contents: write
+
 jobs:
   build-windows:
     runs-on: windows-2019
