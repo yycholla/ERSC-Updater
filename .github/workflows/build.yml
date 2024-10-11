@@ -20,7 +20,7 @@ jobs:
       - name: Run PyInstaller
         run: |
           python -m PyInstaller ERSCUpdater.spec
-      - uses: action/upload-artifact@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: Windows_ERSC
           path: dist/ERSC.exe
